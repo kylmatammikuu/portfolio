@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body {
+    background: rgb(22, 38, 75);
+    color: aquamarine;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: transparent;
+    text-transform: uppercase;
+    transition: .5s;
+    -webkit-text-stroke: 1.5px rgb(0, 0, 0);
+}
+.logo:hover {
+    color: aqua;
+}
+.logo:nth-child(1):hover {
+    text-shadow: 0 0 10px aqua;
+}
+.navbar a {
+    font-size: 1.7rem;
+    color: aqua;
+    font-weight: 500;
+    margin-left: 3.5rem;
+    transition: 1s;
+}
+.navbar a:hover,
+.navbar a .active {
+    color: rgb(52, 73, 71);
+}
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+.home {
+    display: flex;
+    align-items: center;
+    padding: 0 9%;
+    background: url(norbg.jpg);
+}
+.home-content {
+    max-width: 60rem;
+}
+.home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+.home-content h1 span {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: transparent;
+    text-transform: uppercase;
+    transition: .5s;
+    -webkit-text-stroke: 1.5px rgb(0, 0, 0);
+}
+.home-content h1 span:hover {
+    color: aqua;
+}
+.home-content h1 span:nth-child(1):hover {
+    text-shadow: 0 0 15px;
+}
+.home-content .text-animate {
+    position: relative;
+    width: 32.6rem;
+}
+.home-content .text-animate h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: .7px aqua;
+}
+.home-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 4rem;
+}
+.btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 34.5rem;
+    height: 5rem;
+}
+.btn-box .btn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 100%;
+    background: transparent;
+    border: .2rem solid aqua;
+    border-radius: .8rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    color: aqua;
+    z-index: 1;
+    overflow: hidden;
+}
+.btn-box .btn:hover {
+    color: rgb(47, 255, 217);
+}
+.btn-box .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(14, 36, 74);
+    z-index: -1;
+    transition: .7s;
+}
+.btn-box .btn:hover::before {
+    width: 100%;
+} 
+.home-sci {
+    position: absolute;
+    bottom: 4rem;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: .2rem solid aqua;
+    border-radius: 50%;
+    font-size: 20px;
+    color: aqua;
+    z-index: 1;
+    overflow: hidden;
+}
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(14, 41, 89);
+    z-index: -1;
+    transition: .5s
+}
+.home-sci a:hover::before {
+    width: 100%;
+}
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: rgb(7, 23, 61);
+    padding-bottom: 6rem;
+}
+.heading {
+    font-size: 5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 1.5px aqua;
+}
+.intro-img {
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro-img img {
+    width: 90%;
+    border-radius: 50%;
+    border: .2rem solid aqua;
+}
+.intro-img .circle-spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-top: .2rem solid aqua;
+    border-bottom: .2rem solid aqua; 
+    border-left: .2rem solid aqua; 
+    border-right: .2rem solid aqua;
+}
+.intro-content {
+    text-align: center;
+}
+.intro-content h3 {
+    font-size: 2.6rem;
+}
+.intro-content p {
+    font-size: 1.7rem;
+    margin: 2rem 0 3rem;
+    max-width: 800;
+}
+.skills {
+    min-height: auto;
+    padding-bottom: 7rem;
+    background: rgb(7, 23, 61);
+}
+.skills .skills-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+.skills-row .skills-column {
+    flex: 1 1 40rem;
+}
+.skills-column .heading2 {
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem;
+}
+.skill-box .skill-content {
+    position: relative;
+    border: .3rem solid aqua;
+    border-radius: .9rem;
+    padding: .7rem 1.5rem;
+}
+.skill-content a {
+    position: relative;
+    margin: .8rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 21.5rem;
+    height: 130%;
+    background: transparent;
+    border: .2rem solid aqua;
+    border-radius: .8rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    color: aqua;
+    z-index: 1;
+    overflow: hidden;
+}
+.skill-content a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(55, 104, 144);
+    z-index: -1;
+    transition: .7s;
+}
+.skill-content a:hover::before {
+    width: 100%;
+}
+.contact {
+    min-height: auto;
+    padding-bottom: 7rem;
+    background: rgb(7, 23, 61);
+}
+.contact form {
+    min-width: 70rem;
+    margin: 0 auto;
+    text-align: center;
+}
+.contact form .input-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact form .input-box .input-field {
+    position: relative;
+    width: 49%;
+    margin: .8rem 0;
+}
+.contact form .input-box .input-field input,
+.contact form .textarea-field textarea{
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: aqua;
+    background: transparent;
+    border-radius: .6rem;
+    border: .1rem solid aqua;
+}
+.contact form .input-box .input-field input::placeholder,
+.contact form .textarea-field textarea::placeholder {
+    color: aquamarine;
+}
