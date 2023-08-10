@@ -34,7 +34,7 @@ body {
     color: transparent;
     text-transform: uppercase;
     transition: .5s;
-    -webkit-text-stroke: 1.5px rgb(0, 0, 0);
+    -webkit-text-stroke: 1.5px aqua;
 }
 .logo:hover {
     color: aqua;
