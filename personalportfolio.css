@@ -188,7 +188,6 @@ section {
     flex-direction: column;
     gap: 2rem;
     padding-bottom: 6rem;
-    background: rgb(7, 23, 61);
 }
 .heading {
     font-size: 5rem;
@@ -240,7 +239,7 @@ section {
     margin-top: 6rem;
     min-height: auto;
     padding-bottom: 7rem;
-    background: rgb(7, 23, 61);
+    margin-top: 10rem;
 }
 .skills .skills-row {
     display: flex;
