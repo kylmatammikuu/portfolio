@@ -18,7 +18,7 @@ body {
     max-width: 1440px;
     margin: 0 auto;
     height: 100vh;
-    background: rgb(22, 38, 75);
+    background: rgb(7, 23, 61);
     color: aquamarine;
 }
 .header {
@@ -187,7 +187,6 @@ section {
     align-items: center;
     flex-direction: column;
     gap: 2rem;
-    background: rgb(7, 23, 61);
     padding-bottom: 6rem;
 }
 .heading {
@@ -238,7 +237,6 @@ section {
 .skills {
     min-height: auto;
     padding-bottom: 7rem;
-    background: rgb(7, 23, 61);
 }
 .skills .skills-row {
     display: flex;
@@ -293,7 +291,6 @@ section {
 .contact {
     min-height: auto;
     padding-bottom: 7rem;
-    background: rgb(7, 23, 61);
 }
 .contact form {
     min-width: 70rem;
