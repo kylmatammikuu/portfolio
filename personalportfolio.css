@@ -239,6 +239,7 @@ section {
     margin-top: 6rem;
     min-height: auto;
     padding-bottom: 7rem;
+    background: rgb(7, 23, 61);
 }
 .skills .skills-row {
     display: flex;
